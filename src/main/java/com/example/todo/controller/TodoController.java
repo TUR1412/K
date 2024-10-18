@@ -21,8 +21,13 @@ public class TodoController {
     }
 
     @PostMapping
+<<<<<<< HEAD
     public String addTodo(@RequestParam String description, @RequestParam String priority) {
         todoList.add(new Todo(idCounter++, description, priority));
+=======
+    public String addTodo(@RequestParam String description, @RequestParam LocalDate dueDate) {
+        todoList.add(new Todo(idCounter++, description, dueDate));
+>>>>>>> K2
         return "redirect:/todos";
     }
 

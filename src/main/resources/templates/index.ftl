@@ -7,11 +7,15 @@
 <h1>待办事项列表</h1>
 <form action="/todos" method="post">
     <input type="text" name="description" placeholder="输入待办事项" required>
+<<<<<<< HEAD
     <select name="priority">
         <option value="high">高</option>
         <option value="medium">中</option>
         <option value="low">低</option>
     </select>
+=======
+    <input type="date" name="dueDate" required> <!-- 添加截止日期输入框 -->
+>>>>>>> K2
     <button type="submit">添加</button>
 </form>
 
