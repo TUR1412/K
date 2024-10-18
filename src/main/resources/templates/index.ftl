@@ -7,8 +7,10 @@
 <h1>待办事项列表</h1>
 <form action="/todos" method="post">
     <input type="text" name="description" placeholder="输入待办事项" required>
+    <input type="date" name="dueDate" required> <!-- 添加截止日期输入框 -->
     <button type="submit">添加</button>
 </form>
+
 <ul>
     <#list todos as todo>
         <li>
